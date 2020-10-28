@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "NavHeader": "/components/NavHeader/NavHeader"
+  }
 }

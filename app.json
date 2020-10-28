@@ -1,18 +1,20 @@
 {
+  "entryPagePath": "pages/login/login",
   "pages": [
-    "pages/login/login",
     "pages/index1/index1",
+    "pages/login/login",
+    "pages/personal/personal",
     "pages/video/video",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
-    "navigationBarTitleText": "布袋云音乐",
-    "enablePullDownRefresh": true
+    "navigationBarTitleText": "布袋云音乐"
   },
   "tabBar": {
     "color": "#333",
     "selectedColor": "#d43c33",
+    "backgroundColor":"#fff",
     "list": [
       {
         "pagePath": "pages/index1/index1",
@@ -27,7 +29,7 @@
         "selectedIconPath": "/static/images/tabs/selected.png"
       },
       {
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/personal/personal",
         "text": "个人中心",
         "iconPath": "/static/images/tabs/tab-my.png",
         "selectedIconPath": "/static/images/tabs/tab-my-current.png"
@@ -35,5 +37,10 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":false
 }

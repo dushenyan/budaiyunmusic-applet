@@ -42,32 +42,15 @@
   font-size: 26rpx;
 }
 
-.title {
-  margin: 34rpx;
-  font-size: 26rpx;
-  line-height: 26rpx;
-  color: #666;
-}
-
-.header {
-  margin: 0 30rpx;
-}
-
-.removieContainer .more {
-  float: right;
-  border: 1rpx solid #333;
-  padding: 10rpx 20rpx;
-  font-size: 26rpx;
-  border-radius: 30rpx;
-}
-
 .scroll-view_H {
   display: flex;
+  height: 300rpx;
+  margin-bottom: -20rpx;
 }
 
 .scrollItem {
   width: 200rpx;
-  margin: 24rpx 6rpx 10rpx 16rpx;
+  margin: 24rpx 6rpx 6rpx 16rpx;
 }
 
 .scrollItem image {
@@ -83,5 +66,40 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  /* white-space: nowrap; */
+  white-space: nowrap;
+}
+
+/* 音乐排行榜 */
+
+.regeContainer {
+  margin: 44rpx 0 0 22rpx;
+  min-height: 1180rpx;
+}
+
+.swiperItem .title {
+  font-size: 25rpx;
+  margin: 0 0 35rpx 25rpx;
+}
+.musicList{
+  width: 100%;
+  height: 120rpx;
+  margin-left: 20rpx;
+  display: flex;
+}
+
+.musicList image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 8rpx;
+}
+.musicList .count{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.musicList .music-name{
+  height: 100rpx;
+  line-height: 100rpx;
 }

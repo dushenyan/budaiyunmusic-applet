@@ -1,2 +1,2 @@
-<!-- pages/video/video.wxml-->
-<text> pages/video/video.wxml</text>
+<!-- 视频中心 -->
+<view id="tapTest" data-hi="Weixin" bindtap="tapName"> Click me! </view>
