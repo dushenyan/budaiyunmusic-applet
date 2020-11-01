@@ -1,8 +1,5 @@
 /* pages/index1/index1.wxss */
 
-.indexContainer {
-}
-
 .banners {
   width: 100%;
   height: 300rpx;
@@ -80,26 +77,28 @@
   font-size: 25rpx;
   margin: 0 0 35rpx 25rpx;
 }
-.musicList{
+
+.musicList {
   width: 100%;
   height: 120rpx;
   margin-left: 20rpx;
   display: flex;
 }
 
-.musicList image{
+.musicList image {
   height: 100rpx;
   width: 100rpx;
   border-radius: 8rpx;
 }
-.musicList .count{
+
+.musicList .count {
   width: 100rpx;
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
 }
 
-.musicList .music-name{
+.musicList .music-name {
   height: 100rpx;
   line-height: 100rpx;
 }

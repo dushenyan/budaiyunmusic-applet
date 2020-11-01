@@ -1,3 +1,4 @@
+import res from "../../utils/request.js"
 // 用户中心
 let startY = 0;
 let moveY = 0;
@@ -10,9 +11,10 @@ Page({
   data: {
     coverTranfrom: `translateY(0rpx)`,
     coverTrantion: '',
-    userInfo:{}
+    userInfo: {},
+    recentPlayList: []
   },
-  toLogin:function(){
+  toLogin: function() {
     wx.navigateTo({
       url: '/pages/login/login',
     })
@@ -22,15 +24,31 @@ Page({
    */
   onLoad: function(options) {
     // 读取用户的基本信息
-  let userinfo = wx.getStorageSync("userinfo");
-  // console.log(userinfo)
-  if(userinfo){
-   this.setData({
-     userInfo: JSON.parse(userinfo)
-   })
-  }
+    let userinfo = wx.getStorageSync("userinfo");
+    // console.log(userinfo)
+    if (userinfo) {
+      this.setData({
+        userInfo: JSON.parse(userinfo)
+      })
+
+      // 获取用户播放记录
+      this.getbofang(this.data.userInfo.userId)
+    }
   },
 
+  async getbofang(userId) {
+    let bofangList = await new res('/user/record', {
+      uid: '392350392',
+      type: '1'
+    });
+    // let recentPlayList = bofangList.weekData.map(item=>{
+    //   item.id = index++;
+    //   return item;
+    // })
+    this.setData({
+      recentPlayList: bofangList.weekData
+    })
+  },
   handleTouchStart(event) {
     // 主要是一些看一些CSS中的过渡效果
     startY = event.touches[0].clientY;
@@ -52,12 +70,14 @@ Page({
     // 动态更行covertransfrom的值
     this.setData({
       coverTranfrom: `translateY(${moveDistance}rpx)`,
+      coverTrantion: ''
+
     })
   },
   handleTouchEnd() {
     this.setData({
       coverTranfrom: `translateY(0rpx)`,
-      coverTrantion:'transform 1s linear'
+      coverTrantion: 'transform 1s linear'
     })
   },
 

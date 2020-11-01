@@ -1,4 +1,4 @@
-<!--components/NavHeader/NavHeader.wxml-->
+<!-- components/NavHeader/NavHeader.wxml -->
 <!-- 组件化开发 -->
 <view class="header">
   <view class="title">{{title}}</view>

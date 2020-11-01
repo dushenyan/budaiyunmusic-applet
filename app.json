@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/login/login",
+  "entryPagePath": "pages/video/video",
   "pages": [
     "pages/index1/index1",
     "pages/login/login",
@@ -14,9 +14,8 @@
   "tabBar": {
     "color": "#333",
     "selectedColor": "#d43c33",
-    "backgroundColor":"#fff",
-    "list": [
-      {
+    "backgroundColor": "#fff",
+    "list": [{
         "pagePath": "pages/index1/index1",
         "text": "主页",
         "iconPath": "/static/images/tabs/tab-home.png",
@@ -42,5 +41,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug":false
+  "debug": false
 }

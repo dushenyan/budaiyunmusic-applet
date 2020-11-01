@@ -8,7 +8,7 @@ Page({
   data: {
     bannerdata: {},
     personalized: {},
-    regelist: {}
+    regelist: {},
   },
 
   /**
