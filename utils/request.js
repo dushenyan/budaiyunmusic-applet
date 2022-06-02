@@ -43,7 +43,7 @@ export default (url, data = {}, method = 'GET') => {
       },
       fail: (err) => {
         // console.log('请求失败: ', err);
-        reject(err); // reject修改promise的状态为失败状态 rejected
+        // reject(err); // reject修改promise的状态为失败状态 rejected
       }
     })
   })

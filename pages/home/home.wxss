@@ -1,5 +1,3 @@
-/* pages/index1/index1.wxss */
-
 .banners {
   width: 100%;
   height: 300rpx;
@@ -9,8 +7,6 @@
   width: 100%;
   height: 100%;
 }
-
-/* 五个标题导航 */
 
 .navContainer {
   display: flex;
@@ -59,14 +55,11 @@
 
 .scrollItem text {
   font-size: 26rpx;
-  /* 单行 */
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   white-space: nowrap;
 }
-
-/* 音乐排行榜 */
 
 .regeContainer {
   margin: 44rpx 0 0 22rpx;
